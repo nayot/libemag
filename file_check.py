@@ -94,7 +94,7 @@ def show_result(text):
     messagebox.showinfo("Check Result", text)
 
 def check_filename(filename):
-    pattern = r"^(62|63|64|65|66|67)\d{6}.ipynb"
+    pattern = r"^(62|63|64|65|66|67)\d{6}_\w+.ipynb"
     match = re.search(pattern, filename)
     if match:
         return True
